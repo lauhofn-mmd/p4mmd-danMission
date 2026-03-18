@@ -7,6 +7,7 @@ body {
     --green-color: #2B7F16;
     --red-color: #DF0209;
     --blue-color: #E8F4F4;
+    --white-color: #FFFFFF;
 }
 
 :is(h1, h2, h3) {
@@ -18,10 +19,13 @@ body {
 
 h1 {
     font-size: 2rem;
-    color: white;
+    color: var(--white-color);
 }
 h2 {
     font-size: 1.5rem;
+}
+.h2--white {
+    color: var(--white-color);
 }
 h3 {
     font-size: 1rem;
@@ -31,10 +35,11 @@ h3 {
     border-radius: 0.3rem;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
-    background: #DF0209;
-    border: 2px solid #DF0209;
-    color: white;
+    background: var(--red-color);
+    border: 2px solid var(--red-color);
+    color: var(--white-color);
     padding: 0.3rem 0.6rem;
+    margin-bottom: 1rem;
 }
 
 .button--big {
@@ -43,7 +48,7 @@ h3 {
 }
 
 .button:hover {
-    background-color: white;
+    background-color: var(--white-color);
     color: var(--red-color);
 }
 
@@ -53,6 +58,19 @@ p {
     font-size: 1rem;
     font-weight: 400;
 }
+
+label {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
 /* Main setup slut */
 
 /* Footer start */
@@ -60,7 +78,7 @@ p {
 .footer {
     padding: 1rem;
     background-color: var(--green-color);
-    color: white; 
+    color: var(--white-color); 
 }
 
 .footer-contact {
@@ -117,7 +135,7 @@ li.footer-contact--heart::before {
 /* Footer contact icons slut */
 
 .footer-contact--p {
-    color: white;
+    color: var(--white-color);
 }
 
 .some {
