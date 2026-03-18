@@ -1,6 +1,6 @@
+/* Main setup start */
 body {
     margin: 0; 
-
 }
 
 :root{
@@ -27,9 +27,96 @@ h3 {
     font-size: 1rem;
 }
 
+.button {
+    border-radius: 0.3rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    background: #DF0209;
+    border: 1px solid #DF0209;
+    color: white;
+    padding: 0.3rem 0.6rem;
+}
+
+.button--small {
+
+}
+
 p {
     color: black; 
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-weight: 400;
 }
+/* Main setup slut */
+
+/* Footer start */
+
+.footer {
+    padding: 1rem;
+    background-color: var(--green-color);
+    color: white; 
+}
+
+.footer-contact {
+    list-style: none;
+}
+
+.footer-contact li {
+  list-style: none;
+  line-height: 0.2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem; 
+}
+
+/* Footer contact icons start */
+li.footer-contact--location::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f3c5";
+    font-weight: 900;
+    display: inline-block;
+}
+
+li.footer-contact--phone::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f095";
+    font-weight: 900;
+}
+
+li.footer-contact--email::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0e0";
+    font-weight: 900;
+}
+
+li.footer-contact--website::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0ac";
+    font-weight: 900;
+}
+
+li.footer-contact--cvr::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f013";
+    font-weight: 900;
+}
+
+li.footer-contact--heart::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f004";
+    font-weight: 200;
+}
+/* Footer contact icons slut */
+
+.footer-contact--p {
+    color: white;
+}
+
+.some {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* Footer slut */
