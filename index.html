@@ -20,7 +20,7 @@
     <body>
         <header>
             <nav>
-
+                
             </nav>
         </header>
 
@@ -48,14 +48,19 @@
             <h2 class="h2--white">Tilmeld dig vores nyhedsmail</h2>
 
             <form class="subscribe-newsletter">
-                <label for="firstname" class="label">Fornavn</label>
-                <input type="text" id="firstname" name="firstname" placeholder="Fornavn" class="input">
-                <label for="lastname" class="label">Efternavn</label>
-                <input type="text" id="lastname" name="lastname" placeholder="Efternavn" class="input">
-                <label for="email" class="label">Email</label>
-                <input type="email" id="email" name="email" placeholder="Indtast din e-mail" class="input">
-                <input type="checkbox" id="newsletter" class="checkbox">
-                <label for="newsletter">Jeg godkender, at Danmission må kontakte mig.*</label>
+                <label for="firstname" class="label">Fornavn<p class="input__required-red">*</p></label>
+                <input required type="text" id="firstname" name="firstname" placeholder="Fornavn" class="input">
+
+                <label for="lastname" class="label">Efternavn<p class="input__required-red">*</p></label>
+                <input required type="text" id="lastname" name="lastname" placeholder="Efternavn" class="input">
+
+                <label for="email" class="label">Email<p class="input__required-red">*</p></label>
+                <input required type="email" id="email" name="email" placeholder="Indtast din e-mail" class="input">
+
+                <div id="newsletter--caption">
+                    <input required type="checkbox" id="newsletter" class="checkbox"> 
+                    <label for="newsletter">Jeg godkender, at Danmission må kontakte mig.<p class="input__required-red">*</p></label>
+                </div>
 
                 <input type="submit" value="SEND" class="button">
             </form>
