@@ -156,6 +156,39 @@
 /* Top section slut */
 
 
+/* Introduktion og Video, start */
+
+    .introduktion {
+        margin: 0 16px;
+    }
+
+    .introduktion__video {
+        background-color: grey;
+        height: 230px;
+        color: var(--white-color);
+        position: relative;
+    }
+
+    .introduktion__video-icon {
+        position: absolute;
+        font-size: 40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+/* Introduktion og video, slut */
+
+
+/* Stillingerne, start */
+
+    .stillingerne {
+        margin: 0 16px;
+    }
+
+/* Stillingerne, slut */
+
+
 /* Footer start */
 
     .footer {
