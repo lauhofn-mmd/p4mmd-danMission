@@ -196,14 +196,24 @@
     }
 
     .fact__card {
+        display: flex;
+        flex-direction: column;
         background-color: var(--green-color);
+        color: var(--white-color);
         border-radius: 5px;
-        height: 215px;
+        padding: 8px;
     }
 
     .fact__card-caption {
         color: var(--white-color);
+        margin: 10px auto;
     }
+
+    .fact__card-text {
+        color: var(--white-color);
+        list-style-type: circle;
+    }
+
 
 /* Grøn Fakta boks, slut */
 
