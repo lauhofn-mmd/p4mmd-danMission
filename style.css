@@ -189,6 +189,25 @@
 /* Stillingerne, slut */
 
 
+/* Grøn Fakta boks, start */
+
+    .fact {
+        margin: 24px 16px;
+    }
+
+    .fact__card {
+        background-color: var(--green-color);
+        border-radius: 5px;
+        height: 215px;
+    }
+
+    .fact__card-caption {
+        color: var(--white-color);
+    }
+
+/* Grøn Fakta boks, slut */
+
+
 /* Footer start */
 
     .footer {
