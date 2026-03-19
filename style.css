@@ -86,7 +86,7 @@
     .header__menu {
         display: flex;
         flex-direction: row;
-        background-color: var(--white-color);
+        background-color: aqua;
         height: 80px;
         margin-top: 0;
         margin-bottom: 0;
@@ -112,9 +112,12 @@
     }
 
     .header__menu-logo {
-        float: right;
         cursor: pointer;
         height: 30px;
+    }
+
+    .rightli {
+        float: right;
     }
 
 
