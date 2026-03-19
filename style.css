@@ -84,40 +84,33 @@
 /* Header, Navigation Start */
 
     .header__menu {
-        display: flex;
-        flex-direction: row;
-        background-color: aqua;
-        height: 80px;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0 16px;
-
-        position: fixed;  /* Fixed header */
+        height: 78px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
         overflow: hidden;
+        background-color: var(--white-color);
+
+        position: fixed;
         top: 0;
         width: 100%;
     }
 
     .header__menu-element {
-        list-style-type: none;
-        margin-top: 30px;
+        margin-top: 15px;
+        float: left;
+        display: block;
+        color: var(--green-color);
+        padding: 14px 16px;
+        text-decoration: none;
     }
 
     .header__menu-icon {
         font-size: 25px;
-        height: 30px;
-        margin-right: 19px;
-        color: var(--green-color);
-        cursor: pointer;
     }
 
-    .header__menu-logo {
-        cursor: pointer;
-        height: 30px;
-    }
-
-    .rightli {
-        float: right;
+    .header__menu-right {
+        float: right 
     }
 
 
