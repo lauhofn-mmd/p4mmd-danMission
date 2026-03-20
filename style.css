@@ -188,24 +188,30 @@
 
     .stillingerne__cards {
         display: flex;
-        flex-direction: column;
-        background-color: #DF0209;
+        flex-direction: row;
+        overflow: auto;
+        white-space: nowrap;
     }
 
     .stillingerne__cards-element {
         background-color: white;
         border-radius: 5px;
-        margin: 10px;
+        margin: 16px;
         padding: 8px;
         width: 172px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .stillingerne__cards-image {
-        background-color: black;
-        text-align: center;
-        justify-content: center;
         border-radius: 5px;
         height: 107px;
+    }
+
+    .stillingerne__cards-image img {
+        object-fit: cover;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
     }
 
 /* Stillingerne, slut */
