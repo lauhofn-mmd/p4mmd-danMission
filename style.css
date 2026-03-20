@@ -190,7 +190,8 @@
         display: flex;
         flex-direction: row;
         overflow: auto;
-        white-space: nowrap;
+        white-space: nowrap;     /* Overflow og White-space er de to der driller teksten... Men man skal bruge dem for at få scroll. Hm.. */
+        margin: auto;
     }
 
     .stillingerne__cards-element {
