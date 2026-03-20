@@ -85,7 +85,7 @@
 
     .header__menu {
         z-index: 5;
-        height: 78px;
+        height: 4.56rem;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -98,16 +98,16 @@
     }
 
     .header__menu-element {
-        margin-top: 15px;
+        margin-top: 1rem;
         float: left;
         display: block;
         color: var(--green-color);
-        padding: 14px 16px;
+        padding: 0.9rem 1rem;
         text-decoration: none;
     }
 
     .header__menu-icon {
-        font-size: 25px;
+        font-size: 1.5rem;
     }
 
     .header__menu-right {
@@ -121,7 +121,7 @@
 /* Top section start */
 
     .top {
-        margin-top: 78px;
+        margin-top: 4rem;
         z-index: 4;
         position: relative;
         text-align: center;
@@ -129,7 +129,7 @@
 
     .top__card {
         background-color: grey;
-        height: 210px;
+        height: 13rem;
     }
 
     .top__card-img {
@@ -159,19 +159,19 @@
 /* Introduktion og Video, start */
 
     .introduktion {
-        margin: 0 16px;
+        margin: 0 1rem;
     }
 
     .introduktion__video {
         background-color: grey;
-        height: 230px;
+        height: 14rem;
         color: var(--white-color);
         position: relative;
     }
 
     .introduktion__video-icon {
         position: absolute;
-        font-size: 40px;
+        font-size: 2.5rem;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -183,36 +183,34 @@
 /* Stillingerne, start */
 
     .stillingerne {
-        margin: 0 16px;
+        margin: 0 1rem;
     }
 
     .stillingerne__cards {
         display: flex;
         flex-direction: row;
         overflow: auto;
-        white-space: nowrap;     /* Overflow og White-space er de to der driller teksten... Men man skal bruge dem for at få scroll. Hm.. */
         margin: auto;
     }
 
     .stillingerne__cards-element {
         background-color: white;
-        border-radius: 5px;
-        margin: 16px;
-        padding: 8px;
-        width: 172px;
+        border-radius: 0.5rem;
+        margin: 1rem;
+        padding: 0.5rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    .stillingerne__cards-image {
-        border-radius: 5px;
-        height: 107px;
     }
 
     .stillingerne__cards-image img {
         object-fit: cover;
-        border-radius: 5px;
-        width: 100%;
-        height: 100%;
+        border-radius: 0.5rem;
+        width: 8.8rem;
+        height: 6.6rem;
+    }
+
+    .stillingerne__cards-desc {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
 /* Stillingerne, slut */
@@ -229,13 +227,13 @@
         flex-direction: column;
         background-color: var(--green-color);
         color: var(--white-color);
-        border-radius: 5px;
-        padding: 8px;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
     }
 
     .fact__card-caption {
         color: var(--white-color);
-        margin: 10px auto;
+        margin: 1rem auto;
     }
 
     .fact__card-text {
@@ -250,14 +248,14 @@
 /* Kontaktformular, start */
 
     .kontakt__caption {
-        margin: 78px 16px 32px 16px;
+        margin: 4.75rem 1rem 2rem 1rem;
     }
 
     .kontakt__menu {
         display: flex;
         flex-direction: column;
-        border-radius: 5px;
-        padding: 16px;
+        border-radius: 0.5rem;
+        padding: 1rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
