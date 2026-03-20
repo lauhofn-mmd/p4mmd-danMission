@@ -194,7 +194,7 @@
     }
 
     .stillingerne__cards-element {
-        background-color: white;
+        background-color: var(--blue-color);
         border-radius: 0.5rem;
         margin: 1rem;
         padding: 0.5rem;
@@ -206,11 +206,6 @@
         border-radius: 0.5rem;
         width: 8.8rem;
         height: 6.6rem;
-    }
-
-    .stillingerne__cards-desc {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
     }
 
 /* Stillingerne, slut */
