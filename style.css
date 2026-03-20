@@ -186,6 +186,28 @@
         margin: 0 16px;
     }
 
+    .stillingerne__cards {
+        display: flex;
+        flex-direction: column;
+        background-color: #DF0209;
+    }
+
+    .stillingerne__cards-element {
+        background-color: white;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 8px;
+        width: 172px;
+    }
+
+    .stillingerne__cards-image {
+        background-color: black;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+        height: 107px;
+    }
+
 /* Stillingerne, slut */
 
 
