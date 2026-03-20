@@ -218,6 +218,23 @@
 /* Grøn Fakta boks, slut */
 
 
+/* Kontaktformular, start */
+
+    .kontakt__caption {
+        margin: 78px 16px 32px 16px;
+    }
+
+    .kontakt__menu {
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        border-radius: 5px;
+    }
+
+
+/* Kontaktformular, slut */
+
+
 /* Footer start */
 
     .footer {
