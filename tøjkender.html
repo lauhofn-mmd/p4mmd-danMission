@@ -20,11 +20,29 @@
     <body>
         <header>
             <nav>
-                <ul class="header__menu">
-                    <li class="header__menu-element header__menu-icon"><i class="fa-solid fa-bars"></i></li>
-                    <li class="header__menu-element header__menu-icon"><i class="fa-solid fa-magnifying-glass"></i></li>
+
+                <div class="header__burger-container"></div>
+
+                <ul class="header__menu">  <!-- Inspiation fra W3Schools "Mobile Navigation Menu" -->
+
+                    <!-- Burger menu - aktiverer toggle menu -->
+                    <a href="javascript:void(0);" class="header__burger-icon" onclick="mobileMenu()">
+                        <li class="header__menu-element header__menu-icon"><i class="fa-solid fa-bars"></i></li>
+                    </a>
+
+                    <li class="header__menu-element header__menu-icon"><a href="#søg"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li class="header__menu-element header__menu-right"><a href="index.html"><img src="images/dm-logo-mobil.webp" alt="Danmissions logo"></a></li>
                 </ul>
+
+                <!-- Gemte links i Burger menu -->
+                    <div id="menuLinks">
+                        <div><a href="#støt">Støt  </a><i class="fa-solid fa-angle-right"></i></div>
+                        <div><a href="#genbrug">Genbrug  </a><i class="fa-solid fa-angle-right"></i></div>
+                        <div><a href="#voresArbejde">Vores arbejde  </a><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+
+                <script defer src="javascript/burger-menu.js"></script>  <!-- Link til burger JS -->
+
             </nav>
         </header>
 
