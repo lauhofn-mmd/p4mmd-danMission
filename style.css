@@ -295,6 +295,7 @@
     .banner__element {
         margin: 2rem 0rem 1rem 0rem;
         text-align: center;
+        background-image: url(images/hero-test-blur.webp);
         background-color: rgba(0,0,0, 0.3);
         background-position: center;
         background-repeat: no-repeat;
@@ -307,8 +308,21 @@
         color: var(--white-color);
     }
 
-    .banner__link {
+    .banner__link a:link {
         margin: 1rem;
+        color: var(--white-color);
+        text-decoration: none;
+    }
+
+    .banner__link a:visited {
+        color: var(--white-color);
+    }
+
+    .banner__link a:hover {
+        margin: 1rem;
+        color: var(--white-color);
+        text-decoration: underline;
+        cursor: pointer;
     }
 
 /* Banner, Slut */
