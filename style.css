@@ -84,7 +84,7 @@
 /* Header, Navigation Start */
 
     .header__menu {
-        z-index: 5;
+        z-index: 3;
         height: 4.56rem;
         list-style-type: none;
         margin: 0;
@@ -106,14 +106,74 @@
         text-decoration: none;
     }
 
-    .header__menu-icon {
-        font-size: 1.5rem;
-    }
+    /* Burger menu */
 
-    .header__menu-right {
-        float: right 
-    }
+        .header__menu #menuLinks {
+            z-index: 2;
+            position: relative;
+            overflow: hidden;
+        }
 
+        #menuLinks {   /* Burger menu */
+            display: none;
+            flex-direction: column;
+            position: fixed;
+
+            top: 73px;
+            width: 100%;
+            background-color: var(--green-color);
+            padding: 1rem;
+            gap: 1rem;
+
+            font-family: "Roboto", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            color: var(--white-color);
+        }
+
+        #menuLinks a:link {
+            color: var(--white-color);
+            text-decoration: none;
+        }
+
+        #menuLinks a:visited {
+            color: var(--white-color);
+            text-decoration: none;
+        }
+
+        #menuLinks a:hover {
+            color: var(--white-color);
+            text-decoration: underline;
+        }
+
+    /* Burger menu */
+
+
+    /* Links */
+
+        .header__menu-element a:link {
+            color: var(--green-color);
+        }
+
+        .header__menu-element a:visited {
+            color: var(--green-color);
+        }
+
+        .header__menu-element a:hover {
+            color: var(--green-color);
+        }
+
+        .header__menu-icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .header__menu-right {
+            float: right 
+        }
+
+    /* Links */
 
 /* Header, Navigation Slut */
 
@@ -122,7 +182,7 @@
 
     .top {
         margin-top: 4rem;
-        z-index: 4;
+        z-index: 1;
         position: relative;
         text-align: center;
     }
