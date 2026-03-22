@@ -292,8 +292,23 @@
 
 /* Banner, start */
 
-    .banner {
-        margin: 0 1rem;
+    .banner__element {
+        margin: 2rem 0rem 1rem 0rem;
+        text-align: center;
+        background-color: rgba(0,0,0, 0.3);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0.5rem;
+    }
+
+    .banner__caption {
+        margin: 1rem;
+        color: var(--white-color);
+    }
+
+    .banner__link {
+        margin: 1rem;
     }
 
 /* Banner, Slut */

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="da">
+
+    <head>
+        <title>DanmissionFrivilligeReplica</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Font Awesome ikoner-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu-element header__menu-icon"><i class="fa-solid fa-bars"></i></li>
+                    <li class="header__menu-element header__menu-icon"><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li class="header__menu-element header__menu-right"><a href="index.html"><img src="images/dm-logo-mobil.webp" alt="Danmissions logo"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="top">
+            <div class="top__card">
+                <img class="top__card-img" src="images/Syerske.webp" alt="Billede med teksten 'Frivillig ekspedient' hvor man kan melde sig som frivillig">
+                <h1 class="top__card-caption">FRIVILLIG SYERSKE</h1>
+                <button class="button button--big top__card-button" type="button" onclick="location.href='kontakt.html'">TILMELD DIG HER</button>
+            </div>
+        </section>
+
+        <section class="introduktion">
+            <h2>Det skal du vide</h2>
+            <p>Som frivillig, bliver du en vigtig del af et hyggeligt fællesskab. I ekspedientrollen er det en del af dit ansvar at sikre en god oplevelse for både kunder og kollegaer.</p>
+        </section>
+
+        <section class="fact">
+            <div class="fact__card">
+                <div><h2 class="fact__card-caption">Det skal du vide</h2></div>
+                <div>
+                    <ul>
+                        <li><p class="fact__card-text">Du behøver ingen erfaring med at arbejde i butik eller betjene kunder, men du skal have lyst til at hjælpe vores kunder og give dem en rar oplevelse, når de handler hos os.</p></li>
+                        <li><p class="fact__card-text">Du skal have lyst til at indgå i et hyggeligt fællesskab.</p></li>
+                    </li>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner">  <!-- Inspireret af eksempel W3Schools "Blurred Background Image" -->
+            
+            <div class="banner__element">
+                <h2 class="banner__caption">Blev en del af vores fællesskab i dag!</h2>
+                <p class="banner__link"><a href="kontakt.html">Klik her for at tilmelde dig</a></p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h2 class="h2--white">Tilmeld dig vores nyhedsmail</h2>
+
+            <form class="subscribe-newsletter">
+                <label for="firstname" class="label">Fornavn<p class="input__required-red">*</p></label>
+                <input required type="text" id="firstname" name="firstname" placeholder="Fornavn" class="input">
+
+                <label for="lastname" class="label">Efternavn<p class="input__required-red">*</p></label>
+                <input required type="text" id="lastname" name="lastname" placeholder="Efternavn" class="input">
+
+                <label for="email" class="label">Email<p class="input__required-red">*</p></label>
+                <input required type="email" id="email" name="email" placeholder="Indtast din e-mail" class="input">
+
+                <div id="newsletter--caption">
+                    <input required type="checkbox" id="newsletter" class="checkbox"> 
+                    <label for="newsletter">Jeg godkender, at Danmission må kontakte mig.<p class="input__required-red">*</p></label>
+                </div>
+
+                <input type="submit" value="SEND" class="button">
+            </form>
+
+            <ul class="footer-contact">
+                <li class="footer-contact--location"><p class="footer-contact--p">Strandagervej 24, 2900 Hellerup</p></li>
+                <li class="footer-contact--phone"><p class="footer-contact--p">+45 3962 9911</p></li>
+                <li class="footer-contact--email"><p class="footer-contact--p">danmission@danmission.dk</p></li>
+                <li class="footer-contact--website"><p class="footer-contact--p">http://danmission.dk/</p></li>
+                <li class="footer-contact--cvr"><p class="footer-contact--p">CVR: 25191501</p></li>
+                <li class="footer-contact--heart"><p class="footer-contact--p">Giro: 600-0398</p></li>
+                <li class="footer-contact--heart"><p class="footer-contact--p">Netbank: reg.nr. 4190 konto 6000398</p></li>
+                <li class="footer-contact--heart"><p class="footer-contact--p">Mobilepay: 507725</p></li>
+            </ul>
+
+            <ul class="some">
+                <li> <a href="https://facebook.com/danmission" target="_self"></a><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></li>
+                <li><a href="https://www.instagram.com/danmission/" target="_self"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a></li>
+                <li><a href="#" target="_self"><i class="fa-brands fa-tiktok fa-lg" style="color: #ffffff;"></i></a></li>
+                <li><a href="https://www.youtube.com/user/Danmission" target="_self"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/747887/" target="_self"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a></li>
+                <li><a href="https://twitter.com/danmissiondk" target="_self"><i class="fa-brands fa-x-twitter fa-lg" style="color: #ffffff;"></i></a></li>
+            </ul>
+        </footer>
+
+    </body>
+
+</html>
