@@ -494,8 +494,202 @@
 
 
 
-/* MEDIA QUIERY OG RESPONSIV DESIGN, START */
 
-    
 
-/* MEDIA QUIERY OG RESPONSIV DESIGN, SLUT */
+@media only screen and (min-width: 700px) {  /* MEDIA QUIERY OG RESPONSIV DESIGN, START */
+
+    /**/
+        h1 {
+            font-size: 4rem;
+            color: var(--white-color);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .h2--white {
+            color: var(--white-color);
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+    /**/
+
+    /* Header, start */
+
+        .header__menu {
+            z-index: 3;
+            height: 4.56rem;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: var(--white-color);
+
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .header__menu-element {
+            margin-top: 1rem;
+            float: left;
+            display: block;
+            color: var(--green-color);
+            padding: 0.9rem 1rem;
+            text-decoration: none;
+        }
+
+    /* Header, slut */
+
+
+    /* Hero billede section, start */
+        .top__card {
+            background-color: grey;
+            height: 25rem;
+        }
+
+        .top__card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+
+        .top__card-caption {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    /* Hero billede, section, slut */
+
+    /* Introduktion og Video, start */
+
+        .introduktion {
+            margin: 0 1rem;
+        }
+
+        .introduktion__box {
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+        }
+
+        .introduktion__desc {
+            flex-grow: 2;
+        }
+
+        .introduktion__video {
+            flex-basis: 1400px;
+            width: 100%;
+            height: 300px;
+            background-color: grey;
+            color: var(--white-color);
+            position: relative;
+        }
+
+        .introduktion__video img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+
+        .introduktion__video-icon {
+            position: absolute;
+            font-size: 2.5rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+
+    /* Introduktion og video, slut */
+
+
+    /* Stillingerne, start*/
+
+        .stillingerne {
+            margin: 0 1rem;
+        }
+
+        .stillingerne__cards {
+            display: flex;
+            flex-direction: row;
+            overflow: auto;
+            margin: auto;
+        }
+
+        .stillingerne__cards-element {
+            background-color: var(--blue-color);
+            width: 300px;
+            border-radius: 0.5rem;
+            margin: 1rem;
+            padding: 0.6rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .stillingerne__cards-image img {
+            object-fit: cover;
+            border-radius: 0.5rem;
+            width: 13rem;
+            height: 9rem;
+        }
+
+    /* Stillinger, slut */
+
+    /* Citataer, Start*/
+
+        .quotes__elements {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .quotes__card {
+            background-color: var(--blue-color);
+            border-radius: 0.5rem;
+            margin: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;  
+            flex-basis: 300px;    
+        }
+        
+
+        .quotes__card-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    /* Citater, slut */
+
+
+    /* Footer, start */
+
+        .footer {
+            padding: 1rem;
+            background-color: var(--green-color);
+            color: var(--white-color); 
+            gap: 20rem;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .footer__element1 {
+            flex-grow: 1;
+        }
+
+        .footer__element2 {
+            flex-grow: 1;
+        }
+
+    /* Footer, slut */
+
+
+}  /* MEDIA QUIERY OG RESPONSIV DESIGN, SLUT */
+
