@@ -669,13 +669,33 @@
     /* Citater, slut */
 
 
+    /* Kontaktformular, start */
+
+        .kontakt__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 4rem;
+        }
+
+        .kontakt__element1 {
+            width: 500px;
+        }
+
+        .kontakt__element2 {
+            width: 700px;
+        }
+
+    /* Kontaktformular, slut */
+
+
     /* Footer, start */
 
         .footer {
             padding: 1rem;
             background-color: var(--green-color);
             color: var(--white-color); 
-            gap: 20rem;
+            gap: 10rem;
             display: flex;
             flex-direction: row-reverse;
         }
