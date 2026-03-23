@@ -23,16 +23,16 @@
 
                 <div class="header__burger-container"></div>
 
-                <ul class="header__menu">  <!-- Inspiation fra W3Schools "Mobile Navigation Menu" -->
+                <div class="header__menu">  <!-- Inspiation fra W3Schools "Mobile Navigation Menu" -->
 
                     <!-- Burger menu - aktiverer toggle menu -->
                     <a href="javascript:void(0);" class="header__burger-icon" onclick="mobileMenu()">
-                        <li class="header__menu-element header__menu-icon"><i class="fa-solid fa-bars"></i></li>
+                        <div class="header__menu-element header__menu-icon"><i class="fa-solid fa-bars"></i></div>
                     </a>
-
-                    <li class="header__menu-element header__menu-icon"><a href="#søg"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li class="header__menu-element header__menu-right"><a href="index.html"><img src="images/dm-logo-mobil.webp" alt="Danmissions logo"></a></li>
-                </ul>
+ 
+                    <div class="header__menu-element header__menu-icon"><a href="#søg"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                    <div class="header__menu-element header__menu-right"><a href="index.html"><img src="images/dm-logo-mobil.webp" alt="Danmissions logo"></a></div>
+                </div>
 
                 <!-- Gemte links i Burger menu -->
                     <div id="menuLinks">
@@ -67,7 +67,7 @@
                         <li><p class="fact__card-text">Du behøver ingen erfaring med at sy, men skal være tryg ved at bruge nål og tråd.</p></li>
                         <li><p class="fact__card-text">Du er i god form og har ingen skader i ryg eller skuldre.</p></li>
                         <li><p class="fact__card-text">Du skal have lyst til at indgå i et hyggeligt fællesskab.</p></li>
-                    </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -84,18 +84,19 @@
             <h2 class="h2--white">Tilmeld dig vores nyhedsmail</h2>
 
             <form class="subscribe-newsletter">
-                <label for="firstname" class="label">Fornavn<p class="input__required-red">*</p></label>
+                <div><label for="firstname" class="label">Fornavn</label><p class="input__required-red">*</p></div>
                 <input required type="text" id="firstname" name="firstname" placeholder="Fornavn" class="input">
 
-                <label for="lastname" class="label">Efternavn<p class="input__required-red">*</p></label>
+                <div><label for="lastname" class="label">Efternavn</label><p class="input__required-red">*</p></div>
                 <input required type="text" id="lastname" name="lastname" placeholder="Efternavn" class="input">
 
-                <label for="email" class="label">Email<p class="input__required-red">*</p></label>
+                
+                <div><label for="email" class="label">Email</label><p class="input__required-red">*</p></div>
                 <input required type="email" id="email" name="email" placeholder="Indtast din e-mail" class="input">
 
                 <div id="newsletter--caption">
                     <input required type="checkbox" id="newsletter" class="checkbox"> 
-                    <label for="newsletter">Jeg godkender, at Danmission må kontakte mig.<p class="input__required-red">*</p></label>
+                    <label for="newsletter">Jeg godkender, at Danmission må kontakte mig.</label><p class="input__required-red">*</p>
                 </div>
 
                 <input type="submit" value="SEND" class="button">
