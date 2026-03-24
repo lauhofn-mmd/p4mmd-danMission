@@ -709,19 +709,10 @@
     /* Kontaktformular, start */
 
         .kontakt__container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            
             gap: 4rem;
         }
 
-        .kontakt__element1 {
-            width: 500px;
-        }
-
-        .kontakt__element2 {
-            width: 700px;
-        }
 
     /* Kontaktformular, slut */
 
@@ -730,13 +721,21 @@
 
         .footer {
             padding: 1rem;
-            gap: 10rem;
             display: flex;
             flex-direction: row-reverse;
+            justify-content: space-between;
         }
 
         .footer-contact li {
             line-height: normal;
+        }
+
+        .footer__element1 {
+
+        }
+
+        .footer__element2 {
+
         }
 
     /* Footer, slut */
