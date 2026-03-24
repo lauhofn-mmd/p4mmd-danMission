@@ -13,7 +13,7 @@
         --conor-rounded: 5px;
     }
 
-    :is(h1, h2, h3) {
+    :is(h1, h2, h3,) {
     color: var(--green-color);
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
@@ -219,6 +219,11 @@
     .header__desktop-button {
         font-weight: bold;
         float: right;
+        color: var(--green-color);
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
     }
 
 
