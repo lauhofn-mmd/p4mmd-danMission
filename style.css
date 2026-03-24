@@ -86,6 +86,10 @@
 
 /* Header, Navigation Start */
 
+    .header__mobil {
+        display: contents;
+    }
+
     .header__menu {
         z-index: 3;
         height: 4.56rem;
@@ -180,6 +184,72 @@
     /* Links */
 
 /* Header, Navigation Slut */
+
+
+/* Desktop Navigation Start */
+
+    .header__desktop {
+        display: none;
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+
+    .header__menu-desktop {
+        z-index: 3;
+        height: 4.56rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--white-color);
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .header__desktop-element {
+        margin-top: 1rem;
+        float: left;
+        display: block;
+        color: var(--green-color);
+        padding: 0.9rem 1rem;
+    }
+
+    .header__desktop-button {
+        font-weight: bold;
+        float: right;
+    }
+
+
+
+    /* Links */
+
+        .header__desktop-element a:link {
+            color: var(--green-color);
+            text-decoration: none;
+        }
+
+        .header__desktop-element a:visited {
+            color: var(--green-color);
+            text-decoration: none;
+        }
+
+        .header__desktop-element a:hover {
+            color: var(--green-color);
+            text-decoration: none;
+        }
+
+        .header__desktop-icon {
+            font-size: 1rem;
+            cursor: pointer;
+            float: inline-end; 
+        }
+
+
+    /* Links */
+
+/* Desktop Navigation Slut */
 
 
 /* Top section start */
@@ -543,6 +613,14 @@
     /* Knapper slut */
 
     /* Header, start */
+
+        .header__desktop {
+            display: contents;
+        }
+
+        .header__mobil {
+            display: none;
+        }
 
         .header__menu {
             z-index: 3;
