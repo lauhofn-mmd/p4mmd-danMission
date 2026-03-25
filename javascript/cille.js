@@ -19,15 +19,23 @@ const citater = [
 const quoteContainer = document.getElementsByClassName("quotes__elements")[0];
 
 for (let i = 0; i < citater.length; i++) {
-    quoteContainer.innerHTML += `<div class="quotes__card"> <p class="quotes__card-quote">${citater[i].quote}</p> <div class="quotes__card-flex"> <div> <i class="fa-solid fa-circle-user quotes__card-icon"></i> </div> <div> <h3 class="quotes__card-name">${citater[i].name}</h3> <p class="quotes__card-job">${citater[i].job}</p> </div> </div> </div>`;
+    quoteContainer.innerHTML += `
+    <div class="quotes__card"> 
+        <p class="quotes__card-quote">${citater[i].quote}</p> 
+        <div class="quotes__card-flex"> 
+            <div> <i class="fa-solid fa-circle-user quotes__card-icon"></i> 
+        </div> 
+        <div> 
+            <h3 class="quotes__card-name">${citater[i].name}</h3> 
+            <p class="quotes__card-job">${citater[i].job}</p> 
+        </div> 
+        </div> 
+    </div>`;
 
-    if (i == 3) {
+    if (i == 2) {
         console.log("Der er 3 citater");
     }
-    else if (i > 3) {
+    else if (i > 2) {
         console.log("Der er mere end 3 citater");
     }
-    else {
-        console.log("Der er færre end 3 citater");
-    };
 }
