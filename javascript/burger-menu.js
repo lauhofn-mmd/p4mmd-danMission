@@ -1,3 +1,4 @@
+console.log("Hello");
 
 function mobileMenu() {
   var x = document.getElementById("menuLinks");
