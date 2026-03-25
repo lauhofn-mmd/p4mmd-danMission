@@ -17,6 +17,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         
     </head>
+
+
     <body>
         <header>
             <nav>
@@ -76,10 +78,11 @@
                         <input required type="text" id="phonenumber" name="phonenumber" placeholder="Indtast dit telefon nummer" class="input">
 
                         <div><label for="butik" class="label">Hvilken butik ønsker du at frivillig i?</label><p class="input__required-red">*</p></div>
-                        <input required type="text" id="butik" name="butik" placeholder="Indtast butik" class="input">
+                        <select id="butik_select" onclick="butikDropdown()"></select>
+
 
                         <div><label for="arbejde" class="label">Hvad ønsker du at arbejde med?</label><p class="input__required-red">*</p></div>
-                        <input required type="text" id="arbejde" name="arbejde" placeholder="Indtast arbejde" class="input">
+                        <select id="job_select" onclick="jobDropdown()"></select>
 
                         <label for="kommentar" class="label">Kommentar</label>
                         <input required type="text" id="kommentar" name="kommentar" placeholder="Skriv her" class="input">
@@ -93,6 +96,10 @@
 
                         <input type="submit" value="SEND" class="button">
                     </form>
+
+                    <script defer src="javascript/kontakt_dropdown.js"></script>  <!-- Kodehjælp fra shouts.dev (Dropdown Array List) -->
+
+
                 </div>
             </div>
 
