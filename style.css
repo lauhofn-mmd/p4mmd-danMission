@@ -555,7 +555,7 @@
         border-radius: 5px;
         text-align: center;
         padding: 25px;
-        width: 25%; /* Could be more or less, depending on screen size */
+        width: 50%; /* Could be more or less, depending on screen size */
         }
 
         .modal__container-close {
@@ -885,6 +885,15 @@
         .kontakt__container {
             
             gap: 4rem;
+        }
+
+        .modal__container-content {
+        background-color: #E8F4F4;
+        margin: 15% auto; /* 15% from the top and centered */
+        border-radius: 5px;
+        text-align: center;
+        padding: 25px;
+        width: 25%; /* Could be more or less, depending on screen size */
         }
 
 
