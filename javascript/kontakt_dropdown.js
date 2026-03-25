@@ -49,14 +49,12 @@
     let mailValue = requiredMail.value;
     let phoneValue = requiredPhone.value;
 
-    function alertMessage() {
-        console.log(nameValue);
-        console.log(mailValue);
-        console.log(phoneValue);
-    }
-
-    function myFunction() {
-        document.getElementsByClassName("kontakt__menu").reset();
+    function alertMessage() {  // virker ikke
+        if (nameValue !== null && mailValue !== null && phoneValue !== null) {
+            console.log("Udfyld Kontaktformular.");
+        } else {
+            console.log("Besked sendt.");
+        }
     }
     
 //
