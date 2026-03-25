@@ -69,13 +69,13 @@
                 <div class="kontakt__element2">
                     <form class="kontakt__menu">
                         <div><label for="firstname" class="label">Navn</label><p class="input__required-red">*</p></div>
-                        <input required type="text" id="fornavn" name="firstname" placeholder="Indtast dit navn" class="input">
+                        <input required type="text" id="fornavn" name="firstname" placeholder="Skriv her" class="input">
                         
                         <div><label for="email" class="label">Email</label><p class="input__required-red">*</p></div>
-                        <input required type="email" id="e-mail" name="email" placeholder="Indtast din e-mail" class="input">
+                        <input required type="email" id="e-mail" name="email" placeholder="Skriv her" class="input">
 
                         <div><label for="phonenumber" class="label">Telefon</label><p class="input__required-red">*</p></div>
-                        <input required type="text" id="phonenumber" name="phonenumber" placeholder="Indtast dit telefon nummer" class="input">
+                        <input required type="text" id="phonenumber" name="phonenumber" placeholder="Skriv her" class="input">
 
                         <div><label for="butik" class="label">Hvilken butik ønsker du at frivillig i?</label><p class="input__required-red">*</p></div>
                         <select id="butik_select" onclick="butikDropdown()"></select>
@@ -85,7 +85,7 @@
                         <select id="job_select" onclick="jobDropdown()"></select>
 
                         <label for="kommentar" class="label">Kommentar</label>
-                        <input required type="text" id="kommentar" name="kommentar" placeholder="Skriv her" class="input">
+                        <input type="text" id="kommentar" name="kommentar" placeholder="Skriv her" class="input">
 
                         <div class="newsletter--caption">
                             <div>
@@ -94,7 +94,9 @@
                             </div>
                         </div>
 
-                        <input type="submit" value="SEND" class="button">
+                        <input id="send_knap" type="submit" type="reset" value="SEND" class="button" onclick="alertMessage()">
+                    
+
                     </form>
 
                     <script defer src="javascript/kontakt_dropdown.js"></script>  <!-- Kodehjælp fra shouts.dev (Dropdown Array List) -->
