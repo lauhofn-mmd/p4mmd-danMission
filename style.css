@@ -118,7 +118,7 @@
         padding: 0.9rem 1rem;
         text-decoration: none;
     }
-    
+
 /* dropdown button */
     .dropbtn {
         background-color: transparent;
@@ -128,7 +128,6 @@
         font-style: normal;
         font-size: 1rem;
         margin-top: 1rem;
-        padding: 0.9rem 1rem;
     }
 
     .dropdown {
