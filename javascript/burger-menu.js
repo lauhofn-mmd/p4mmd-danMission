@@ -15,7 +15,7 @@ function myFunction(){
 
 window.onclick = function(event){
     if (!event.target.matches('.dropbtn')) {
-        var dropdowns = this.document.getElementByClassName("dropdown-content");
+        dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns [i];
