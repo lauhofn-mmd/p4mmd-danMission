@@ -49,12 +49,27 @@
     let mailValue = requiredMail.value;
     let phoneValue = requiredPhone.value;
 
-    function alertMessage() {  // virker ikke
-        if (nameValue !== null && mailValue !== null && phoneValue !== null) {
-            console.log("Udfyld Kontaktformular.");
-        } else {
-            console.log("Besked sendt.");
+    //
+        // Kodehjælp fra W3Schools.com "Modal Boxes"
+
+        let modal = document.getElementById("myModal");
+        let btn = document.getElementById("send_knap");
+        let span = document.getElementsByClassName("modal__container-close")[0];
+
+        btn.onclick = function() {
+        modal.style.display = "block";
         }
-    }
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // Lukker vindue når man klikker udenfor x
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    //
     
 //

@@ -55,6 +55,22 @@
             </div>
         </section>
 
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+
+        <!-- Alert kasse -->
+        <div id="myModal" class="modal__container">
+
+            <!-- Modal content -->
+            <div class="modal__container-content">
+                <span class="modal__container-close"><i class="fa-solid fa-xmark"></i></span>
+                <i class="fa-solid fa-heart fa-beat heart__icon"></i>
+                <h3>Tak for din tilmelding!</h3>
+                <p>Vi kontakter dig hurtigst muligt.</p>
+            </div>
+
+        </div>
+
         <section class="kontakt__caption">
 
             <div class="kontakt__container">
@@ -94,13 +110,12 @@
                             </div>
                         </div>
 
-                        <input id="send_knap"  value="SEND" class="button" onclick="alertMessage()">
+                        <input id="send_knap" type="reset" value="SEND" class="button">
                     
 
                     </form>
 
                     <script defer src="javascript/kontakt_dropdown.js"></script>  <!-- Kodehjælp fra shouts.dev (Dropdown Array List) -->
-
 
                 </div>
             </div>
