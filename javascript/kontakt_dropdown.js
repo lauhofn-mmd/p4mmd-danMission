@@ -40,17 +40,8 @@
 
 //  Send knap Alert 
 
-
-    let requiredName = document.getElementById("fornavn");
-    let requiredMail = document.getElementById("e-mail");
-    let requiredPhone = document.getElementById("phonenumber");
-
-    let nameValue = requiredName.value;
-    let mailValue = requiredMail.value;
-    let phoneValue = requiredPhone.value;
-
-    //
-        // Kodehjælp fra W3Schools.com "Modal Boxes"
+    
+    // Kodehjælp fra W3Schools.com "Modal Boxes"
 
         let modal = document.getElementById("myModal");
         let btn = document.getElementById("send_knap");
@@ -64,12 +55,12 @@
         modal.style.display = "none";
         }
 
-        // Lukker vindue når man klikker udenfor x
+    // Lukker vindue når man klikker udenfor x
         window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
-        }
-    //
+    }
+
     
 //
