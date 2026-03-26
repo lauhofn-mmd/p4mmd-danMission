@@ -8,6 +8,11 @@
 
         <link rel="stylesheet" href="style.css">
 
+        <!-- JS dokumenter -->
+        <script defer src="javascript/kontakt_dropdown.js"></script>  <!-- Kodehjælp fra shouts.dev (Dropdown Array List) -->
+        <script defer src="javascript/simon.js"></script>
+        <script defer src="javascript/burger-menu.js"></script>
+
         <!-- Font Awesome ikoner-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -75,8 +80,6 @@
                                 </dl>
                             </div>
                             <div><a href="#voresArbejde">Vores arbejde  </a>
-
-                    <script defer src="javascript/burger-menu.js"></script>  <!-- Link til burger JS -->
                 </div>
 
             </nav>
@@ -146,8 +149,6 @@
 
                     </form>
 
-                    <script defer src="javascript/kontakt_dropdown.js"></script>  <!-- Kodehjælp fra shouts.dev (Dropdown Array List) -->
-
                 </div>
             </div>
 
@@ -159,15 +160,9 @@
                 <h2 class="h2--white">Tilmeld dig vores nyhedsmail</h2>
 
                 <form class="subscribe-newsletter">
-                    <div><label for="firstname" class="label">Fornavn</label><p class="input__required-red">*</p></div>
-                    <input required type="text" id="firstname" name="firstname" placeholder="Fornavn" class="input">
+                    <div class="newsletter__input">
 
-                    <div><label for="lastname" class="label">Efternavn</label><p class="input__required-red">*</p></div>
-                    <input required type="text" id="lastname" name="lastname" placeholder="Efternavn" class="input">
-
-                    
-                    <div><label for="email" class="label">Email</label><p class="input__required-red">*</p></div>
-                    <input required type="email" id="email" name="email" placeholder="Indtast din e-mail" class="input">
+                    </div>
 
                     <div id="newsletter--caption">
                         <input required type="checkbox" id="newsletter" class="checkbox"> 
