@@ -161,41 +161,6 @@
 
     /* Burger menu */
 
-        .burger_dropbtn {
-            background-color: var(--green-color);
-            color: var(--white-color);
-            font-family: "Roboto", sans-serif;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border: none;
-            width: 100%;
-            text-align: left;
-            padding: 0%;
-        }
-
-        .burger_dropdown {
-            position: relative;
-            width: 100%;
-        }
-
-        .burger_dropdown-content {
-            display: none;
-            flex-direction: column;
-            position: relative;
-            padding-left: 1rem;
-            background-color: var(--green-color);
-        }
-
-        .burger_dropdown-content a {
-            color: var(--white-color);
-            padding: 0.75rem 1rem;
-            text-decoration: none;
-        }
-
-        .burger_dropdown-content.show {
-            display: flex;
-        }
-
         .header__menu #menuLinks {
             z-index: 4;
             position: relative;
@@ -287,6 +252,7 @@
         position: fixed;
         top: 0;
         width: 100%;
+        max-width: 1200px;
     }
 
     .header__desktop-element {
