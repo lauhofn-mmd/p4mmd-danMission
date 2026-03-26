@@ -32,7 +32,7 @@ const form = document.getElementsByClassName("newsletter__input")[0];
 
 function visForm() {
     for (let i = 0; i < nyhed.length; i++) {
-       nyhed.innerHTML += `
+       form.innerHTML += `
        <div><label for="${nyhed[i].for}" class="label">${nyhed[i].overskrift}</label><p class="input__required-red">*</p></div>
         <input required type="${nyhed[i].type}" id="${nyhed[i].id}" name="${nyhed[i].name}" placeholder="${nyhed[i].placeholder}" class="${nyhed[i].class}">`
     
