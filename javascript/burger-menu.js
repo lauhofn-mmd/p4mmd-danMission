@@ -1,4 +1,5 @@
 console.log("Hello");
+
 //Mobile burgermenu
 function mobileMenu() {
   var x = document.getElementById("menuLinks");
@@ -21,7 +22,7 @@ const MenuLinks = [
 
 const menuContainer = document.getElementById("LinksMenu");
 
-//loop
+//Loop
 for (let links in MenuLinks) {
     console.log(links, MenuLinks[links]);
 }
@@ -31,6 +32,7 @@ function myFunction() {
     document.getElementById("genbrugDropdown").classList.toggle("show");
 }
 
+//Extra steps...
 window.onclick = function(event){
     if (!event.target.matches('.dropbtn')) {
         dropdowns = document.getElementsByClassName("dropdown-content");
