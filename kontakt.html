@@ -23,27 +23,61 @@
         <header>
             <nav>
 
-                <div class="header__burger-container"></div>
+                <!-- DESKTOP NAVIGATION -->
+                <div class="header__desktop">
+                    <div class="header__menu-desktop">
 
-                <div class="header__menu">  <!-- Inspiation fra W3Schools "Mobile Navigation Menu" -->
+                        <div class="header__desktop-element"><a href="index.html"><img src="images/dm-logo-mobil.webp" alt="Danmissions logo"></a></div>
 
-                    <!-- Burger menu - aktiverer toggle menu -->
-                    <a href="javascript:void(0);" class="header__burger-icon" onclick="mobileMenu()">
-                        <div class="header__menu-element header__menu-icon"><i class="fa-solid fa-bars"></i></div>
-                    </a>
- 
-                    <div class="header__menu-element header__menu-icon"><a href="#søg"><i class="fa-solid fa-magnifying-glass"></i></a></div>
-                    <div class="header__menu-element header__menu-right"><a href="index.html"><img src="images/dm-logo-mobil.webp" alt="Danmissions logo"></a></div>
+                        <div>
+                            <div class="header__desktop-element header__desktop-button"><a href="#støt">Støt</a></div>
+                            <div class="header__desktop-element header__desktop-button">
+                                <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Gendbrug</button><i class="fa fa-caret-down"></i>
+                                <div id="genbrugDropdown" class="dropdown-content">
+                                    <a href="#">Bliv Frivillig</a>
+                                    <a href="#">Find Butik</a>
+                                    <a href="#">Om Os</a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="header__desktop-element header__desktop-button"><a href="#voresArbejde">Vores arbejde</a></div>
+                        </div>
+
+                        <div class="header__desktop-element header__desktop-icon"><a href="#søg"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+
+                    </div>
                 </div>
+                <!-- DESKTOP NAVIGATION -->
 
-                <!-- Gemte links i Burger menu -->
-                    <div id="menuLinks">
-                        <div><a href="#støt">Støt  </a><i class="fa-solid fa-angle-right"></i></div>
-                        <div><a href="#genbrug">Genbrug  </a><i class="fa-solid fa-angle-right"></i></div>
-                        <div><a href="#voresArbejde">Vores arbejde  </a><i class="fa-solid fa-angle-right"></i></div>
+                <div class="header__mobil">
+                    <div class="header__menu">  <!-- Inspiation fra W3Schools "Mobile Navigation Menu" -->
+
+                        <!-- Burger menu - aktiverer toggle menu -->
+                        <a href="javascript:void(0);" class="header__burger-icon" onclick="mobileMenu()">
+                            <div class="header__menu-element header__menu-icon"><i class="fa-solid fa-bars"></i></div>
+                        </a>
+    
+                        <div class="header__menu-element header__menu-icon"><a href="#søg"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                        <div class="header__menu-element header__menu-right"><a href="index.html"><img src="images/dm-logo-mobil.webp" alt="Danmissions logo"></a></div>
                     </div>
 
-                <script defer src="javascript/burger-menu.js"></script>  <!-- Link til burger JS -->
+                    <!-- Gemte links i Burger menu -->
+                        <div id="menuLinks">
+                            <div><a href="#støt">Støt  </a>
+                                <!--dropdown container -->
+                            <div class="burger_dropdown">
+                                <button onclick="toggleDropdown()" class="burger_dropbtn">Genbrug<i class="fa fa-caret-down"></i></button>
+                                <div id="burger_genbrugDropdown" class="burger_dropdown-content">
+                                    <a href="#">Bliv Frivillig</a>
+                                    <a href="#">Find Butik</a>
+                                    <a href="#">Om Os</a>
+                                </div>
+                            </div>
+                            <div><a href="#voresArbejde">Vores arbejde  </a>
+
+                    <script defer src="javascript/burger-menu.js"></script>  <!-- Link til burger JS -->
+                </div>
 
             </nav>
         </header>
