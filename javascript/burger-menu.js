@@ -11,15 +11,20 @@ function mobileMenu() {
 
 //Array Mobile
 const MenuLinks = [
-    {a: "Støt"},
+    {a: "#støt", div:"Støt"},
     {dt: "Genbrug"},
-    {dd: "Bliv Frivillig"},
+    {a: "index.html", dd: "Bliv Frivillig"},
     {dd: "Find Butik"},
     {dd: "Om Os"},
+    {a: "#voresArbejde", div:"Vores arbejde"},
 ];
 
+const menuContainer = document.getElementById("LinksMenu");
 
-
+//loop
+for (let links in MenuLinks) {
+    console.log(links, MenuLinks[links]);
+}
 
 //Desktop Dropdown
 function myFunction() {
