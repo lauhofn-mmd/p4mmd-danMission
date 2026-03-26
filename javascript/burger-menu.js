@@ -1,5 +1,5 @@
 console.log("Hello");
-
+//Mobile burgermenu
 function mobileMenu() {
   var x = document.getElementById("menuLinks");
     if (x.style.display === "flex") {
@@ -9,6 +9,19 @@ function mobileMenu() {
     }
 } 
 
+//Array Mobile
+const MenuLinks = [
+    {a: "Støt"},
+    {dt: "Genbrug"},
+    {dd: "Bliv Frivillig"},
+    {dd: "Find Butik"},
+    {dd: "Om Os"},
+];
+
+
+
+
+//Desktop Dropdown
 function myFunction() {
     document.getElementById("genbrugDropdown").classList.toggle("show");
 }
