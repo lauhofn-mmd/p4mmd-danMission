@@ -9,11 +9,6 @@ function mobileMenu() {
     }
 } 
 
-function ToggleDropdown() {
-    const dropdown = document.getElementById("burger_genbrugDropdown");
-    dropdown.classList.toggle("show");
-}
-
 function myFunction() {
     document.getElementById("genbrugDropdown").classList.toggle("show");
 }
