@@ -47,26 +47,30 @@ const stillinger = [
 
 const stillingerContainer = document.getElementsByClassName("stillingerne__cards")[0];
 
-for (let i = 0; i < stillinger.length; i++) {
-    stillingerContainer.innerHTML += `
-        <div class="stillingerne__cards-element">
-            <div class="stillingerne__cards-image">
-                <img src="${stillinger[i].img}" alt="${stillinger[i].alt}">
-            </div>
-            <h3>${stillinger[i].title}</h3>
-            <p class="stillingerne__cards-desc">
-                ${stillinger[i].beskrivelse}
-            </p>
-            <button type="button" class="button"
-                onclick="window.location.href='${stillinger[i].link}'">
-                LÆS MERE
-            </button>
-        </div>`; 
-        
-        if (i == 4) {
-            console.log("Der er 5 stillinger");
+function visStillinger () {
+    for (let i = 0; i < stillinger.length; i++) {
+        stillingerContainer.innerHTML += `
+            <div class="stillingerne__cards-element">
+                <div class="stillingerne__cards-image">
+                    <img src="${stillinger[i].img}" alt="${stillinger[i].alt}">
+                </div>
+                <h3>${stillinger[i].title}</h3>
+                <p class="stillingerne__cards-desc">
+                    ${stillinger[i].beskrivelse}
+                </p>
+                <button type="button" class="button"
+                    onclick="window.location.href='${stillinger[i].link}'">
+                    LÆS MERE
+                </button>
+            </div>`; 
+            
+            if (i == 4) {
+                console.log("Der er 5 stillinger");
+            }
+            else if (i > 4) {
+                console.log("Der er mere end 5 stillinger");
+            }
         }
-        else if (i > 4) {
-            console.log("Der er mere end 5 stillinger");
-        }
-        }
+    }
+
+    visStillinger();
